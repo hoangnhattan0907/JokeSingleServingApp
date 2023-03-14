@@ -36,7 +36,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hoàng Nhật Tân"
+                android:text="Jim HLS"
                 android:textColor="@color/black"
                 android:layout_gravity="right"/>
         </LinearLayout>
@@ -74,7 +74,7 @@
         app:barrierDirection="bottom"/>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="220dp">
         <TextView
             android:id="@+id/text_view_joke"
             android:layout_width="match_parent"
@@ -89,7 +89,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:paddingTop="10dp">
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_positive"
             android:layout_width="120dp"
