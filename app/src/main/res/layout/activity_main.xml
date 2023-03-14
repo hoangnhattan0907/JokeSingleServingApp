@@ -72,18 +72,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="bottom"/>
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="This is story!"
-        android:padding="25dp"
-        android:textSize="16dp"/>
+        android:layout_height="200dp">
+        <TextView
+            android:id="@+id/text_view_joke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is story!"
+            android:padding="25dp"
+            android:textSize="16sp"
+            />
+    </ScrollView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_positive"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
@@ -93,6 +101,7 @@
             android:textColor="@color/white"
             android:textAllCaps="false"/>
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_negative"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
